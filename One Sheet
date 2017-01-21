@@ -1,0 +1,36 @@
+# BattleTank – One Sheet
+## Concept
+Batalha entre 2 tanques de Guerra em mundo aberto com vários montes e algumas construções para proporcionar cover para os jogadores
+
+## Rules
+•	Quem sobreviver ganha
+•	Se o tempo acabar, ganha o jogador com mais vida
+•	Os jogadores devem ficar na região de batalha do mapa
+•	Os dois jogadores possuem munição infinita
+
+
+## Requirements
+•	A terrain height map
+•	Animateable tank models
+•	Sound effects
+o	Engine
+o	Gun Firing
+o	Explosion
+o	Barrel moving
+o	Turret moving
+•	A hud to display your current damage.
+•	Textures
+•	Background music
+•	Effects
+o	Projectile hit effects
+o	Smoke and fire to show damage on enemy tank
+o	Pretty explosion upon death as a nice visceral reward for killing the enemy tank.
+
+## Future additions (The No List)
+•	Trees and other props to decorate the landscape.
+o	Learning to use the procedural foliage tool would be the next level of this
+•	Multiple Maps for variety
+•	Multiple Tanks also for variety
+•	Modo de captura bandeira
+•	Modo de jogo em que os jogadores respawnam, sendo o jogador que tiver mais ponto o vitorioso
+•	Itens como munição e escudo para o modo de jogo em que os jogadores começam com munição finita

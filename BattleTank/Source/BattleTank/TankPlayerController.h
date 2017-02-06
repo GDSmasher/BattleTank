@@ -6,6 +6,7 @@
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h"//.generated Must be the last include
 
+
 /**
  * 
  */
@@ -24,6 +25,8 @@ public:
 private:
 	//Start the movement of the barrel with the aiming dot
 	void AimTowardsCrossHair();
+
+	bool GetSightRayHitLocation(FVector& HitLocation) const;
 };
 
 

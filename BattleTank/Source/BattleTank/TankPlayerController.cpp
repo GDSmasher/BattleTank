@@ -31,11 +31,22 @@ ATank* ATankPlayerController::GetControlledTank() const
 	return Cast<ATank>(GetPawn());
 }
 
+
+
 void ATankPlayerController::AimTowardsCrossHair()
 {
+	FVector HitLocation; //Out parameter
 	if (!GetControlledTank()) { return; }
+	if (GetSightRayHitLocation(HitLocation))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("HitLocation: %s"), *HitLocation.ToString());
+		//TODO Tell the controlled tank to aim at this point
+	}
+}
 
-	//Get world location if line trace through crosshair
-		//if hits the landscape
-			//Tell the controlled tank to aim at this point
+//Get world location of line trace through crosshair if hits the landscape
+bool ATankPlayerController::GetSightRayHitLocation(FVector& HitLocation) const
+{
+	HitLocation = FVector(1.0);
+	return true;
 }

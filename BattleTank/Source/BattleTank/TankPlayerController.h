@@ -33,6 +33,8 @@ private:
 	void AimTowardsCrossHair();
 
 	bool GetSightRayHitLocation(FVector& HitLocation) const;
+
+	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
 };
 
 

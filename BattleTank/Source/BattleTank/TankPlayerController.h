@@ -29,12 +29,17 @@ private:
 	UPROPERTY(EditAnywhere)
 	float CroosHairYLocation = 0.3333;
 
+	UPROPERTY(EditAnywhere)
+	float LineTraceRange = 1000000;
+
 	//Start the movement of the barrel with the aiming dot
 	void AimTowardsCrossHair();
 
 	bool GetSightRayHitLocation(FVector& HitLocation) const;
 
 	bool GetLookDirection(FVector2D ScreenLocation, FVector& LookDirection) const;
+
+	bool GetLookVectorHitLocation(FVector LookDirection, FVector& HitLocation) const;
 };
 
 

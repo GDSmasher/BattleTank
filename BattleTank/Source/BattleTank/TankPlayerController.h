@@ -23,6 +23,12 @@ public:
 	virtual void BeginPlay() override;
 
 private:
+	UPROPERTY(EditAnywhere)
+	float CroosHairXLocation = 0.5;
+
+	UPROPERTY(EditAnywhere)
+	float CroosHairYLocation = 0.3333;
+
 	//Start the movement of the barrel with the aiming dot
 	void AimTowardsCrossHair();
 
